@@ -11,7 +11,7 @@ public:
 	void setID();
 	void printAll();
 
-	Mahasiswa(string pnama) {
+	Mahasiswa(string pnama):nama(pnama) {
 		setID;
 	}
 };
@@ -24,7 +24,8 @@ void Mahasiswa::setID() {
 
 void Mahasiswa::printAll() {
 	cout << "ID =" << id << endl;
-	
+	cout << "Nama = " << nama << endl;
+	cout << endl; 
 }
 
 
